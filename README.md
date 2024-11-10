@@ -1,40 +1,45 @@
-# HR_Analytics
-Employee Attrition Dashboard A Power BI dashboard analyzing employee attrition data to identify key factors affecting turnover. This project visualizes insights by age, job role, education, salary, and tenure, helping HR professionals make data-driven decisions for retention strategies.
-Overview
-This Power BI dashboard visualizes data on employee attrition, helping HR professionals identify trends and insights that can inform retention strategies. The dataset contains various attributes of employees, such as age, education, department, and years at the company, allowing for in-depth analysis.
+# Employee Attrition Dashboard
 
-#Dashboard Highlights
-Count of Employees: 925 employees were analyzed.
-Attrition: 132 employees left the organization.
-Attrition Rate: 14.3% of employees left, indicating potential areas for retention improvement.
-Average Age: 36.84 years, giving insight into the general age demographic.
-Average Income: 6.1K, which may correlate with turnover trends by salary.
-Average Years in Company: 6.4 years, helping to understand loyalty and potential for long-term retention.
-Visualizations and Insights
-Each visualization breaks down attrition by different demographic and job-related factors:
+## Description
 
-#Attrition by Education: Displays attrition based on education fields, with Life Sciences showing the highest turnover.
-Attrition by Age: Identifies age groups with the highest attrition, primarily 26-35 years.
-Attrition by Salary Slab: This shows the salary bracket with the most turnover (up to 5K), suggesting compensation as a key factor.
-Attrition by Years at Company: Highlights that new employees (0-1 year) have higher turnover, indicating possible onboarding challenges.
-Attrition by Job Role: Identifies roles with the highest turnover, like Laboratory Technicians and Research Scientists.
-Attrition by Gender: Presents gender-based attrition, with more male employees leaving than female employees.
-Job Role Distribution Table: Provides an overview of attrition across roles.
-Data Source
+The **Employee Attrition Dashboard** is a Power BI project focused on understanding the factors driving employee turnover in a company. This dashboard provides an in-depth view of various employee demographics and job attributes, including age, education, job role, salary, and tenure, to help HR professionals analyze and interpret trends in attrition. By identifying high-risk groups for turnover, this tool supports strategic, data-driven decision-making aimed at improving employee retention and satisfaction.
 
-#The data is derived from an employee dataset containing 1480 records and 38 columns, which include:
-EmpID: Unique identifier for each employee
-Age, AgeGroup: Employee age and categorized age group
-Attrition: Whether the employee left the company
-JobRole, Department: Employee’s job role and department
-MonthlyIncome, SalarySlab: Salary information categorized for analysis
-YearsAtCompany, YearsSinceLastPromotion: Tenure and promotion-related details
-The CSV file (HR_Analytics.csv) is included in this repository.
+The dashboard is built to be interactive, allowing users to drill down into specific segments and filter results based on different criteria. This flexibility enables HR teams to gain actionable insights into the causes of attrition and prioritize initiatives that address those issues effectively.
 
-#How to Use This Dashboard
-Clone this Repository: Use git clone to download this repository.
-Open Power BI File: Open HR_Analytics.pbix in Power BI Desktop.
-Explore the Dashboard: Use filters in Power BI to view attrition by specific demographics or attributes.
-Additional Notes
-Insights: This dashboard aids in strategic decision-making for employee retention.
-Customization: You can modify the dashboard for other datasets by updating the data file with similar columns.
+## Key Metrics
+1. **Count of Employees**: The total number of employees analyzed is 925.
+2. **Attrition**: 132 employees left the organization, which is 14.3% of the workforce.
+3. **Average Age**: The average age of employees is 36.84 years.
+4. **Average Income**: The average income across employees is $6,100.
+5. **Average Years in Company**: Employees have been with the company for an average of 6.4 years.
+
+## Visualizations and Insights
+This dashboard features various visualizations designed to make attrition patterns clear and actionable:
+
+1. **Attrition by Education**: This donut chart categorizes attrition by education fields. The breakdown reveals that Life Sciences graduates make up the largest group (44%) experiencing turnover, followed by those in Medical (36%) and Technical degrees (15%).
+
+2. **Attrition by Age**: This bar chart highlights the age groups with the highest attrition rates. Employees aged 26-35 are the most likely to leave, which may indicate mid-career transitions or opportunities outside the organization.
+
+3. **Attrition by Salary Slab**: This bar chart categorizes employees by salary brackets, showing the highest turnover in the "Up to 5K" bracket. This suggests that lower compensation may be a factor in employee decisions to leave.
+
+4. **Attrition by Years at Company**: This line chart displays attrition by tenure, revealing that employees with 0-1 years at the company have the highest attrition rates. This insight can prompt a closer look at onboarding and early career support.
+
+5. **Attrition by Job Role**: This bar chart breaks down turnover by job roles. Laboratory Technicians (61) and Research Scientists (47) show the highest attrition numbers, which could help HR prioritize interventions for these roles.
+
+6. **Attrition by Gender**: A simple bar chart that compares attrition rates by gender, showing that 88 males and 38 females left the organization. This may indicate different retention challenges for each gender.
+
+7. **Job Role Distribution Table**: This table provides a cross-reference of attrition across job roles and departments, allowing HR professionals to pinpoint departments with higher attrition rates and prioritize targeted retention efforts.
+
+## Data Source
+
+The data used to create this dashboard is sourced from a CSV file (`HR_Analytics.csv`) containing anonymized information for 1480 employees, covering the following key columns:
+
+- **EmpID**: Unique identifier for each employee.
+- **Age, AgeGroup**: Age of the employee, both as a number and a categorized group.
+- **Attrition**: Indicates whether the employee left the company.
+- **JobRole, Department**: Details of the employee’s role and department.
+- **MonthlyIncome, SalarySlab**: Salary details for each employee, with salary slabs categorized for easier analysis.
+- **YearsAtCompany, YearsSinceLastPromotion**: Information on tenure and promotions.
+
+The Power BI file (`HR_Analytics.pbix`) contains the pre-configured visualizations and calculations based on this data.
+
